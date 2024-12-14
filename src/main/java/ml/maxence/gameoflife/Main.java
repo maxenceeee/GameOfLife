@@ -21,7 +21,7 @@ public class Main extends JPanel
 
     int generation = 0;
 
-    int offsetX = 0, offsetY = 0; // Décalage pour le déplacement
+    int offsetX = 0, offsetY = 0;
     int lastMouseX = -1, lastMouseY = -1;
     public Main(int width, int height) {
         this.width = width;
@@ -124,7 +124,6 @@ public class Main extends JPanel
             }
         }
 
-        // Mettez à jour l'état des cellules pour la génération suivante
         this.cells = newCells;
         this.generation++;
     }
